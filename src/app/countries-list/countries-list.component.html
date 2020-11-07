@@ -1,0 +1,9 @@
+<ul>
+  <li *ngFor="let item of countriesList"
+  (click)="onSelect(item.capital)">
+    {{item.name}}</li>
+</ul>
+
+<hr>
+
+<p>{{selectedCountryCapital}}</p>
